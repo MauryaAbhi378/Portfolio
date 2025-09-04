@@ -2,14 +2,15 @@ import { cn } from "@/lib/utils";
 import React from "react";
 
 export interface OrbitConfig {
-  children: React.ReactNode[];
+  children: React.ReactElement<{ iconSize?: number }>[];
   radius?: number;
   iconSize?: number;
   speed?: number;
   reverse?: boolean;
 }
 
-export interface OrbitingCirclesProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface OrbitingCirclesProps
+  extends React.HTMLAttributes<HTMLDivElement> {
   orbits: OrbitConfig[];
   className?: string;
   showPath?: boolean; // NEW: show orbit lines
@@ -24,7 +25,13 @@ export function OrbitingCircles({
   return (
     <div className={cn("relative w-full h-full", className)}>
       {orbits.map((orbit, orbitIndex) => {
-        const { children, radius = 160, iconSize = 30, speed = 1, reverse } = orbit;
+        const {
+          children,
+          radius = 160,
+          iconSize = 30,
+          speed = 1,
+          reverse,
+        } = orbit;
         const duration = 20 / speed;
 
         return (
@@ -44,20 +51,20 @@ export function OrbitingCircles({
             {children.map((child, index) => {
               const angle = (360 / children.length) * index;
 
-              const childWithProps = React.isValidElement(child)
-                ? React.cloneElement(child, { iconSize })
-                : child;
+              const childWithProps = React.cloneElement(child, { iconSize });
 
               return (
                 <div
                   key={index}
-                  style={{
-                    width: `${iconSize}px`,
-                    height: `${iconSize}px`,
-                    "--angle": `${angle}deg`,
-                    "--radius": `${radius}px`,
-                    "--duration": `${duration}s`,
-                  } as React.CSSProperties}
+                  style={
+                    {
+                      width: `${iconSize}px`,
+                      height: `${iconSize}px`,
+                      "--angle": `${angle}deg`,
+                      "--radius": `${radius}px`,
+                      "--duration": `${duration}s`,
+                    } as React.CSSProperties
+                  }
                   className={cn(
                     "absolute top-1/2 left-1/2 flex items-center justify-center transform-gpu animate-orbit",
                     { "[animation-direction:reverse]": reverse }
