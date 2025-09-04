@@ -63,7 +63,7 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Hey I'm a MERN-Stack Developer
+            {`Hey I'm a MERN-Stack Developer`}
           </h1>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
@@ -72,7 +72,7 @@ export const HeroSection = () => {
             <ArrowDown className="size-4" />
           </button>
           <a
-            href="https://drive.google.com/file/d/1Y6AuHcm2IwzR1OxJEjL2D8_TVP90KogM/view?usp=sharing"
+            href="/MERNStack_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:cursor-pointer"

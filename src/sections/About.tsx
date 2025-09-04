@@ -25,7 +25,7 @@ export const AboutSection: React.FC = () => {
           />
           <div className="z-10">
             <p className="font-semibold sm:text-xs font-sans lg:text-xl lg:font-bold lg:font-serif">
-              Hi, I'm Abhishek Maurya
+              {`Hi, I'm Abhishek Maurya`}
             </p>
             <p className="font-medium sm:text-xs lg:text-md lg:font-semibold">
               I create responsive UIs with React, manage APIs and server logic
