@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { HeroOrbit } from "@/components/HeroOrbit";
 import memojiImage from "@/assets/images/memoji-computer.png";
@@ -12,7 +13,7 @@ export const HeroSection = () => {
       id="home"
       className="py-28 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
     >
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] pointer-events-none">
         <div
           className="absolute inset-0 -z-30 opacity-5"
           style={{
@@ -45,7 +46,7 @@ export const HeroSection = () => {
           <SparkleIcon className="size-14 text-emerald-300/20" />
         </HeroOrbit>
       </div>
-      <div className="container">
+      <div className="container relative z-20">
         <div className="flex flex-col items-center">
           <Image
             src={memojiImage}
@@ -54,7 +55,7 @@ export const HeroSection = () => {
           />
           <div className="bg-gray-950 border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
             <div className="relative bg-green-500 size-2.5 rounded-full">
-              <div className="absolute  animate-ping bg-green-500 inset-0 size-2.5 rounded-full"></div>
+              <div className="absolute animate-ping bg-green-500 inset-0 size-2.5 rounded-full"></div>
             </div>
             <div className="text-sm font-medium">
               Available for new projects
@@ -66,21 +67,20 @@ export const HeroSection = () => {
             {`Hey I'm a MERN-Stack Developer`}
           </h1>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
+        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 relative z-30">
           <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button>
           <a
-            href="/MERNStack_Resume.pdf"
+            href="/resume.pdf"
+            download="resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:cursor-pointer"
+            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl hover:bg-gray-100 transition-colors relative z-40"
           >
-            <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-              <span>📄</span>
-              <span className="font-semibold">View Resume</span>
-            </button>
+            <span>📄</span>
+            <span className="font-semibold">Download Resume</span>
           </a>
         </div>
       </div>
