@@ -28,9 +28,11 @@ export const AboutSection: React.FC = () => {
               {`Hi, I'm Abhishek Maurya`}
             </p>
             <p className="font-medium sm:text-xs lg:text-md lg:font-semibold">
-              I create responsive UIs with React, manage APIs and server logic
-              with Node.js & Express, and design scalable databases with
-              MongoDB.
+              Full-Stack Developer with expertise in designing and developing
+              scalable web applications. Proficient in front-end frameworks,
+              RESTful API development, and database management. Strong focus on
+              performance, clean code, and delivering seamless user experiences
+              across platforms.
             </p>
           </div>
         </div>
@@ -77,7 +79,9 @@ export const AboutSection: React.FC = () => {
         {/* Grid 3 */}
         <div className="grid-special-color grid-3 relative">
           <div className="z-10 w-[50%] mt-24 lg:mt-36">
-            <p className="font-semibold font-sans text-xs lg:font-bold lg:text-2xl lg:font-serif">Tech Stack</p>
+            <p className="font-semibold font-sans text-xs lg:font-bold lg:text-2xl lg:font-serif">
+              Tech Stack
+            </p>
             <p className="font-normal font-sans text-xs lg:font-semibold lg:text-md">
               I specialize in a variety of languages, frameworks, and tools that
               allow me to build robust and scalable applications.
