@@ -73,7 +73,7 @@ export const HeroSection = () => {
             <ArrowDown className="size-4" />
           </button>
           <a
-            href="/resume.pdf"
+            href="/Abhishek_Maurya_Resume.pdf"
             download="resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
