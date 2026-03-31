@@ -1,22 +1,28 @@
-[
+const experiences = [
   {
     companyName: "CometChat",
     jobTitle: "Trainee Engineer",
     startDate: "2025-10",
     endDate: "Present",
     description:
-      "Resolved client-reported bugs by reproducing issues across multiple SDKs and UI Kits. Fixed a Next.js bug where background ringtone audio persisted after the incoming call component unmounted, traced to a missing clearTimeout in the useEffect cleanup function. Implemented product features including Mark as Unread and a universal Message Share supporting all message types across both React and React Native platforms.",
+      "Resolved high-priority developer tickets, improving integration efficiency through deep troubleshooting in React, Next.js. Implemented product features including Mark as Unread and a share message supporting all message types across both React and React Native platforms. Developed and maintained the Chat UI Kit, delivering customizable and responsive components that improved developer experience and end-user engagement.",
     techLearned: ["Next.js", "React-Native", "React"],
-    working : "true"
+    working: "true",
+    workLocation: "Mumbai, India",
+    workType: "Onsite",
   },
   {
     companyName: "Frontendone",
     jobTitle: "Junior Frontend Developer",
-    startDate: "2025-06",
+    startDate: "2025-05",
     endDate: "2025-09",
     description:
       "Developed and maintained web applications using HTML, CSS, and JavaScript.Collaborated with cross-functional teams to deliver high-quality software on time Design & Developed multiple websites for clients.",
     techLearned: ["TypeScript", "React", "Git"],
-    working : "false"
+    working: "false",
+    workLocation: "Mumbai, India",
+    workType: "Remote",
   },
 ];
+
+export default experiences;

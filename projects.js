@@ -1,12 +1,15 @@
-[
+const projects = [
   {
     title: "Job Hunt",
+    slug: "job-hunt",
     techStack: {
       frontend: ["React", "Redux", "Shadcn UI"],
       backend: ["Node", "Express"],
       database: ["MongoDB"],
       authentication: ["JWT"],
     },
+    image : "/jobhunt.png",
+    shortDesc: "A full-stack job portal connecting employers and job seekers with advanced search and application tracking.",
     description: {
       para1:
         "Built with a modern tech stack, it offers a seamless experience for both user roles — employers can post, edit, and manage job listings through a dedicated dashboard, while job seekers can explore curated opportunities, apply with ease, and track their application status in real time. The platform features advanced job search with powerful filters for role, location, salary range, and experience level, ensuring candidates find the most relevant positions quickly and efficiently.",
@@ -25,15 +28,18 @@
     ],
     live: "https://job-hunt-yjwx.onrender.com/",
     github: "https://github.com/MauryaAbhi378/Job-Hunt",
-    web:"true"
+    web: "true",
   },
   {
     title: "Devlog",
+    slug: "devlog",
     techStack: {
       frontend: ["Next.js", "Shadcn UI"],
       database: ["Convex"],
       authentication: ["better-auth"],
     },
+    image : "/devlog.png",
+    shortDesc: "A full-featured blogging platform with a rich writing experience, real-time commenting, and dynamic search capabilities.",
     description: {
       para1:
         "Devlog is a full-featured blogging platform where users can create, publish, and explore blog posts on a wide range of topics. The platform provides a rich writing experience with a powerful media text editor, allowing authors to format their content with ease. Readers can engage with posts through a real-time commenting system, where new comments appear instantly without needing to refresh the page. The application also includes a dynamic search feature that lets users find posts by title, content, making it easy to discover content quickly.",
@@ -52,16 +58,19 @@
     ],
     live: "https://devlog-brown.vercel.app/",
     github: "https://github.com/MauryaAbhi378/Devlog",
-    web:"true"
+    web: "true",
   },
   {
     title: "AI Mock Interview",
+    slug: "ai-mock-interview",
     techStack: {
       frontend: ["React", "Shadcn UI"],
       database: ["Firebase"],
-      AI : ["Gemini API"],
+      AI: ["Gemini API"],
       authentication: ["Clerk"],
     },
+    image : "/ai-mock-interview.png",
+    shortDesc: "A web app that simulates real interview experiences using AI-generated questions and provides detailed feedback.",
     description: {
       para1:
         "AI Mock Interview is a web application built with React that simulates a real interview experience using artificial intelligence. The app leverages the Gemini API to dynamically generate role-specific interview questions, while Firebase and Drizzle ORM handle data persistence storing user sessions, responses, and interview history in a structured and scalable way.",
@@ -80,6 +89,8 @@
     ],
     live: "https://ai-mock-interview-ochre-ten.vercel.app/",
     github: "https://github.com/MauryaAbhi378/AI-Mock-Interview",
-    web:"true"
+    web: "true",
   },
 ];
+
+export default projects;

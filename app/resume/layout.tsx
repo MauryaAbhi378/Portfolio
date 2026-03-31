@@ -1,12 +1,11 @@
 export const metadata = {
-  title: "Abhishek Maurya | Work Experience",
+  title: "Abhishek Maurya | Resume",
 };
 
-export default function WorkLayout({
+export default function ResumeLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return <>{children}</>;
 }
-
