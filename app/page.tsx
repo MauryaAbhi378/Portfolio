@@ -72,7 +72,9 @@ export default function Home() {
             </Link>
 
             <Link
-              href="#contact"
+              href="https://mail.google.com/mail/?view=cm&to=abhim0505@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm text-[#938F99] hover:text-white transition-colors tracking-[0.08em]"
             >
               Get in touch

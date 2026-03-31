@@ -124,11 +124,11 @@ export default async function ProjectDetailPage({
         </div>
       </section>
 
-      {/* ── What I Learned ── */}
-      <section className="bg-[#1B1C1C] py-20">
-        <div className="max-w-5xl mx-auto px-8 flex flex-col md:flex-row gap-16">
-          {/* Left — cards */}
-          <div className="flex-1">
+      {/* ── What I Learned + Links ── */}
+      <section className="bg-[#131313] py-20">
+        <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row gap-16">
+          {/* Left — What I Learned card with its own background */}
+          <div className="md:w-[70%] bg-[#1B1C1C] rounded-xl p-10">
             <div className="flex items-center gap-3 mb-10">
               <div className="w-6 h-px bg-[#FFB787]/70" />
               <span className="font-mono text-[10px] tracking-[0.2em] text-[#FFB787]/80 uppercase">
@@ -150,8 +150,8 @@ export default async function ProjectDetailPage({
             </div>
           </div>
 
-          {/* Right — links */}
-          <div className="md:w-48 shrink-0 flex flex-col gap-4 md:pt-13">
+          {/* Right — links on black background */}
+          <div className="md:w-[30%] shrink-0 flex flex-col gap-4 md:pt-2">
             {project.live && (
               <Link
                 href={project.live}
@@ -171,7 +171,7 @@ export default async function ProjectDetailPage({
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[#938F99] text-sm hover:text-white transition-colors group/gh"
+                className="inline-flex items-center gap-2 text-[#938F99] text-sm hover:text-[#B1C5FF] transition-colors group/gh"
               >
                 View GitHub
                 <MoveRight

@@ -7,7 +7,9 @@ export function Footer() {
       <div className="max-w-5xl mx-auto px-8 flex flex-col items-center gap-3">
         <div className="flex items-center gap-8 flex-wrap justify-center">
           <Link
-            href="mailto:abhim0505@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&to=abhim0505@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-sm text-blue-400 font-extrabold transition-colors"
           >
             abhim0505@gmail.com
