@@ -16,7 +16,6 @@ type Experience = {
 
 type Project = {
   title: string;
-  slug: string;
   shortDesc: string;
 };
 

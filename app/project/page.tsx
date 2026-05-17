@@ -6,7 +6,6 @@ type TechStack = Record<string, string[] | undefined>;
 
 type Project = {
   title: string;
-  slug: string;
   shortDesc: string;
   techStack: TechStack;
   live: string;
