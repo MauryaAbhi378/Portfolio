@@ -54,7 +54,7 @@ export default function ProjectsPage() {
                     Live <ArrowUpRight size={12} />
                   </Link>
                 )}
-                {project.github && project.web === "true" && (
+                {project.github && (
                   <Link
                     href={project.github}
                     target="_blank"
