@@ -152,7 +152,6 @@ export default function Home() {
                 key={i}
                 className="group relative flex items-start justify-between gap-6 py-6 border-b border-white/6"
               >
-                <Link href={`/project/${project.slug}`} className="absolute inset-0 z-0" aria-label={project.title} />
                 <div className="relative z-10 pointer-events-none">
                   <h3 className="text-white font-semibold text-[1.0625rem] mb-1.5 group-hover:text-[#B1C5FF] transition-colors">
                     {project.title}
@@ -161,10 +160,6 @@ export default function Home() {
                     {project.shortDesc}
                   </p>
                 </div>
-                <ArrowRight
-                  size={16}
-                  className="text-[#938F99] shrink-0 mt-1 opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0 transition-all relative z-10 pointer-events-none"
-                />
               </div>
             ))}
           </div>

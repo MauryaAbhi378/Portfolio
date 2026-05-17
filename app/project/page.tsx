@@ -34,13 +34,6 @@ export default function ProjectsPage() {
               key={i}
               className="group relative flex items-start justify-between gap-6 py-6 border-b border-white/6 first:border-t first:border-t-white/6"
             >
-              {/* Stretched link overlay */}
-              <Link
-                href={`/project/${project.slug}`}
-                className="absolute inset-0 z-0"
-                aria-label={project.title}
-              />
-
               <div className="relative z-10 min-w-0 pointer-events-none">
                 <h2 className="text-white font-semibold text-[1.0625rem] mb-1.5 group-hover:text-[#B1C5FF] transition-colors">
                   {project.title}
@@ -52,7 +45,7 @@ export default function ProjectsPage() {
 
               {/* External links — above stretched link */}
               <div className="relative z-10 flex items-center gap-3 shrink-0 mt-0.5 opacity-0 group-hover:opacity-100 transition-opacity">
-                {project.live && (
+                {project.live && project.web === "true" && (
                   <Link
                     href={project.live}
                     target="_blank"
@@ -62,7 +55,7 @@ export default function ProjectsPage() {
                     Live <ArrowUpRight size={12} />
                   </Link>
                 )}
-                {project.github && (
+                {project.github && project.web === "true" && (
                   <Link
                     href={project.github}
                     target="_blank"

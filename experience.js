@@ -7,7 +7,7 @@ const experiences = [
     description:
       "Resolved high-priority developer tickets, improving integration efficiency through deep troubleshooting in React, Next.js. Implemented product features including Mark as Unread and a share message supporting all message types across both React and React Native platforms. Developed and maintained the Chat UI Kit, delivering customizable and responsive components that improved developer experience and end-user engagement.",
     techLearned: ["Next.js", "React-Native", "React"],
-    working: "true",
+    working: "false",
     workLocation: "Mumbai, India",
     workType: "Onsite",
   },
