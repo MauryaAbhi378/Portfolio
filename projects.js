@@ -34,7 +34,7 @@ const projects = [
       authentication: ["Supabase Magic Link"],
     },
     shortDesc:
-      "A full-stack job portal connecting employers and job seekers with advanced search and application tracking.",
+      "Convo is a cross-platform language learning app includes vocabulary, listening comprehension, and AI-powered speaking practice. It features real-time AI conversations via OpenRouter, end-to-end audio recording with transcription, text-to-speech, and a polished UI with Reanimated animations, haptic feedback, and gesture handlers. ",
     github: "https://github.com/MauryaAbhi378/Convo",
     web: "false",
   },
