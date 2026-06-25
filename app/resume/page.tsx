@@ -1,6 +1,6 @@
 
 const DRIVE_RESUME_LINK =
-  "https://drive.google.com/file/d/12Q96kIvBJJ2ZKoUhJGUTODvNswSDTGv9/view?usp=drive_link";
+  "https://drive.google.com/file/d/1u12hl_TL1shMpiMfc5_sXKp7SHXxHzUe/view?usp=sharing";
 
 // For the embedded preview, Drive uses /preview instead of /view
 const DRIVE_EMBED_LINK = DRIVE_RESUME_LINK.replace("/view", "/preview");

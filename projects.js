@@ -1,5 +1,18 @@
 const projects = [
   {
+    title: "Scrapeflow",
+    techStack: {
+      frontend: ["Next", "Context", "Shadcn UI", "Tanstack"],
+      database: ["Neon"],
+      authentication: ["Clerk"],
+    },
+    shortDesc:
+      "Scrapeflow is a visual workflow builder that lets users create multi-step web scraping pipelines through a drag-and-drop interface. It supports cron-based scheduling, real-time execution tracking.",
+    live: "https://scrape-flow-mauve.vercel.app/home",
+    github: "https://github.com/MauryaAbhi378/ScrapeFlow",
+    web: "true",
+  },
+  {
     title: "Job Hunt",
     techStack: {
       frontend: ["React", "Redux", "Shadcn UI"],
